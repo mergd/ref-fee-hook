@@ -1,23 +1,21 @@
-# v4-template
-### **A template for writing Uniswap v4 Hooks 🦄**
+# v4 Referral hook
 
-[`Use this Template`](https://github.com/saucepoint/v4-template/generate)
+### **Hook for taking referral fees if provided a referral code🦄**
 
-1. The example hook [Counter.sol](src/Counter.sol) demonstrates the `beforeSwap()` and `afterSwap()` hooks
-2. The test template [Counter.t.sol](test/Counter.t.sol) preconfigures the v4 pool manager, test tokens, and test liquidity.
+Built for the ethOnline Hackathon
 
 ---
 
 ### Local Development (Anvil)
 
-*requires [foundry](https://book.getfoundry.sh)*
+_requires [foundry](https://book.getfoundry.sh)_
 
 ```
 forge install
 forge test
 ```
 
-Because v4 exceeds the bytecode limit of Ethereum and it's *business licensed*, we can only deploy & test hooks on [anvil](https://book.getfoundry.sh/anvil/).
+Because v4 exceeds the bytecode limit of Ethereum and it's _business licensed_, we can only deploy & test hooks on [anvil](https://book.getfoundry.sh/anvil/).
 
 ```bash
 # start anvil, with a larger code limit
@@ -38,4 +36,3 @@ Additional resources:
 [v4-periphery](https://github.com/uniswap/v4-periphery) contains advanced hook implementations that serve as a great reference
 
 [v4-core](https://github.com/uniswap/v4-core)
-
